@@ -14,9 +14,6 @@ const config: Config = {
         deep: "#060a10",
         surface: "#0a1118",
         card: "#0e1826",
-        "border-subtle": "rgba(50,100,200,0.14)",
-        "border-accent": "rgba(50,100,200,0.32)",
-        "border-gold": "rgba(212,175,55,0.35)",
         gold: "#d4af37",
         "gold-bright": "#f0d060",
         "accent-blue": "#4090f8",
@@ -27,21 +24,16 @@ const config: Config = {
         "text-primary": "#dde8f8",
         "text-secondary": "#7a9cc4",
         "text-muted": "#3d5878",
+        "border-subtle": "rgba(50,100,200,0.14)",
+        "border-accent": "rgba(50,100,200,0.32)",
+        "border-gold": "rgba(212,175,55,0.35)",
       },
       fontFamily: {
         mono: ["JetBrains Mono", "Fira Code", "monospace"],
         ui: ["Inter", "system-ui", "sans-serif"],
       },
       borderRadius: {
-        sm: "4px",
-        md: "8px",
-        lg: "12px",
-        xl: "16px",
-        "2xl": "20px",
-      },
-      backgroundImage: {
-        "terminal-gradient":
-          "radial-gradient(ellipse 70% 50% at 15% 0%,rgba(20,50,120,0.15) 0%,transparent 55%), radial-gradient(ellipse 50% 35% at 85% 100%,rgba(0,100,70,0.07) 0%,transparent 55%)",
+        DEFAULT: "0.5rem",
       },
       boxShadow: {
         "glow-blue": "0 0 18px rgba(64,144,248,0.2)",
@@ -50,14 +42,6 @@ const config: Config = {
         "glow-gold": "0 0 18px rgba(212,175,55,0.25)",
       },
       keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
         blink: {
           "0%,100%": { opacity: "1", transform: "scale(1)" },
           "50%": { opacity: "0.5", transform: "scale(1.4)" },
@@ -68,8 +52,6 @@ const config: Config = {
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
         blink: "blink 2s infinite",
         "slide-in": "slide-in 0.25s ease",
       },

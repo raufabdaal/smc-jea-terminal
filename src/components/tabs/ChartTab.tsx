@@ -132,7 +132,8 @@ export function ChartTab() {
               </div>
               {/* price cursor */}
               <div
-                className="absolute left-0 right-0 h-px bg-accent-cyan shadow-[0_0_5px_#00ccff] transition-[top] duration-[1500ms] ease-in-out"
+                className="absolute left-0 right-0 h-px bg-accent-cyan shadow-[0_0_5px_#00ccff]"
+                style={{ transition: "top 1.5s ease-in-out" }}
                 style={{ top: `${cursorY}%` }}
               />
             </div>
